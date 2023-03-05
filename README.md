@@ -1,0 +1,32 @@
+
+- ab_test_server
+    - log
+    - src
+        - common
+        - config
+        - consumer
+        - controller
+        - dao
+        - model
+        - service
+        - sql
+        - utils
+        - main.go
+    - run.sh
+- common
+    - constant
+    - model
+    - utils
+- search_server
+    - cache
+    - log
+    - src
+        - common
+        - config
+        - controller
+        - model
+        - provider
+        - service
+        - utils
+        - main.go 
+

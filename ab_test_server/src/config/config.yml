@@ -1,0 +1,55 @@
+# 相关配置
+server:
+  model: debug
+  # 端口
+  port: :8081
+  # banner 配置
+  banner:
+    # banner 文件的名字
+    name: banner.txt
+    # 是否加载
+    loading: true
+# 数据库相关配置
+data:
+  category: mysql
+  database: line_china_ab_test
+  ip: 127.0.0.1
+  port: 3306
+  username: root
+  password: 12345678
+  maxIdleConns: 10
+  maxOpenConns: 100
+  # 打印sql
+  sql: true
+  # 初始化SQL配置
+  init:
+    name: init.sql
+    status: false
+  # 测试数据SQL配置
+  test:
+    name: test.sql
+    status: false
+kafka:
+  ip:
+    - 127.0.0.1:9092
+  topic:
+    - test1
+  group: group1
+  assignor: range
+nacos:
+  ip: 127.0.0.1
+  port: 8848
+  path: /nacos
+  nameSpaceId: ''
+  timeoutMs: 5000
+  group: DEFAULT_GROUP
+  a: config-experiment.yaml
+redis:
+  ip: 127.0.0.1
+  port: 6379
+  maxIdle: 30
+  #  在给定时间内，允许分配的最大连接数（当为零时，没有限制）
+  maxActive: 0
+  idleTimeout: 200
+  network: tcp
+

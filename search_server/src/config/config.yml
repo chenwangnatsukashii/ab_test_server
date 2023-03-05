@@ -1,0 +1,22 @@
+kafka:
+  ip:
+    - 127.0.0.1:9092
+  topic: test1
+nacos:
+  ip: 127.0.0.1
+  port: 8848
+  path: /nacos
+  nameSpaceId: ''
+  timeoutMs: 5000
+  group: DEFAULT_GROUP
+  a: config-experiment.yaml
+redis:
+  ip: 127.0.0.1
+  port: 6379
+  maxIdle: 30
+#  在给定时间内，允许分配的最大连接数（当为零时，没有限制）
+  maxActive: 0
+  idleTimeout: 200
+  network: tcp
+
+
